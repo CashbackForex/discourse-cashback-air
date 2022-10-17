@@ -239,11 +239,12 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(
-      90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
-    );
+    // background: linear-gradient(
+    //   90deg,
+    //   var(--tertiary-hover) 0%,
+    //   var(--tertiary) 100%
+    // );
+    background: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%);
     clip-path: ellipse(148% 70% at 91% -14%);
   }
 }
