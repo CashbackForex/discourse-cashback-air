@@ -1,7 +1,7 @@
 {
-  "name": "discourse-air",
+  "name": "discourse-cashback-air",
   "version": "1.0.0",
-  "repository": "https://github.com/discourse/discourse-air",
+  "repository": "https://github.com/CashbackForex/discourse-cashback-air",
   "author": "Jordan Vidrine",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
