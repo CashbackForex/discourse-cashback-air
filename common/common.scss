@@ -1,4 +1,11 @@
 // custom search banner customizations
+$talktrading-background-colors: (
+  main: linear-gradient(90deg,var(--tertiary-hover) 0%,var(--tertiary) 100%),
+  cbf: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%),
+  rkfx: linear-gradient(to right,#ec3f2a 35%,#fc7019 55%)
+);
+$domainName: 'main';
+
 .custom-search-banner-wrap {
   margin: 0 auto !important;
   max-width: unset;
@@ -224,6 +231,10 @@ div.ac-wrap {
     0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
 }
 
+@mixin talktrading-background-colorSet($domainName) {
+  background: map-get($talktrading-background-colors, $domainName);
+}
+
 html {
   body {
     background: linear-gradient(
@@ -239,12 +250,7 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(
-      90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
-    );
-    //background: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%);
+    @include talktrading-background-colorSet($domainName);
     clip-path: ellipse(148% 70% at 91% -14%);
   }
 }
