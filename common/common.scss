@@ -244,15 +244,6 @@ html {
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
-  // .background-container {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   height: 100vh;
-  //   width: 100vw;
-  //   @include talktrading-background-colorSet($domainName);
-  //   clip-path: ellipse(148% 70% at 91% -14%);
-  // }
   .background-container-main {
     position: fixed;
     top: 0;
