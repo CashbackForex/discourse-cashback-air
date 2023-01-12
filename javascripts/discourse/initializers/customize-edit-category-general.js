@@ -7,9 +7,12 @@ export default {
   initialize() {
     withPluginApi("0.8.14", (api) => {
       const org_path = window.location.hostname;
-      console.log("Start getting org_path!");
-      if(!org_path) console.log("No org_path!");
-      else console.log("Org_Path:", org_path);
+      window.alert("Start getting org_path!");
+      if(!org_path) 
+        window.alert("No org_path!");
+      else
+        window.alert("Org_Path:", org_path);
+        
       api.modifyClass("component:edit-category-general", {
         pluginId: "discourse-air",
 
