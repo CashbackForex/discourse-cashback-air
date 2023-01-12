@@ -1,1 +1,16 @@
-<div class="background-container"></div>
+<div class="background-container" id="backgroundContainer" onload="loadBackground()"></div>
+<script>
+  function loadBackground(){
+    var org_path = window.location.hostname;
+    var className = '';
+    if(org_path == 'local.talktrading.io')
+      className = 'background-container-main';
+    else if(org_path == 'cbf.local.talktrading.io')
+      className = 'background-container-cbf';
+    else if(org_path == 'rkfx.local.talktrading.io')
+      className = 'background-container-rkfx';
+    window.alert(className);
+    document.getElementById('backgroundContainer').className = className;    
+  }
+</script>
+
