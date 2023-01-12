@@ -8,7 +8,7 @@ export default {
     withPluginApi("0.8.14", (api) => {
       const org_path = window.location.hostname;
       if(!org_path) return;
-      alert(org_path);
+      console.log("Org_Path:", org_path);
       api.modifyClass("component:edit-category-general", {
         pluginId: "discourse-air",
 
