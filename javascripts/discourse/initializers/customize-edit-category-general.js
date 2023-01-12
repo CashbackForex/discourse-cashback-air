@@ -11,7 +11,7 @@ export default {
       if(!org_path) 
         window.alert("No org_path!");
       else
-        window.alert("Org_Path:", org_path);
+        window.alert(org_path);
 
       api.modifyClass("component:edit-category-general", {
         pluginId: "discourse-air",
