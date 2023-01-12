@@ -6,7 +6,7 @@ export default {
 
   initialize() {
     withPluginApi("0.8.14", (api) => {
-      const org_path = window.location.href;
+      const org_path = window.location.hostname;
       window.alert("Start getting org_path!");
       if(!org_path) 
         window.alert("No org_path!");
