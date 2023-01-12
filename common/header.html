@@ -2,13 +2,14 @@
 <script>
   function loadBackground(){
     var org_path = window.location.hostname;
+    window.alert(org_path);
     var className = '';
-    if(org_path == 'local.talktrading.io')
-      className = 'background-container-main';
-    else if(org_path == 'cbf.local.talktrading.io')
+    if(org_path == 'cbf.local.talktrading.io')
       className = 'background-container-cbf';
     else if(org_path == 'rkfx.local.talktrading.io')
       className = 'background-container-rkfx';
+    else
+      className = 'background-container-main';    
     window.alert(className);
     document.getElementById('backgroundContainer').className = className;    
   }
