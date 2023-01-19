@@ -26,7 +26,6 @@ export default {
       });
 
       const domain = window.location.hostname;
-      window.alert(domain);
       let goBackDomainLinks = '';
       if(domain == 'talktrading.io') return;
       else if (domain == 'cbf.talktrading.io') goBackDomainLinks = settings.goBack_cbf_links;
