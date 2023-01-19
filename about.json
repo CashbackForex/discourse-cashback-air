@@ -6,7 +6,9 @@
     "https://github.com/CashbackForex/discourse-cashback-category-group-box.git",
     "https://github.com/discourse/discourse-loading-slider.git",
     "https://github.com/discourse/discourse-clickable-topic.git",
-    "https://github.com/CashbackForex/discourse-cashback-search-banner.git"
+    "https://github.com/CashbackForex/discourse-cashback-search-banner.git",
+    "https://github.com/CashbackForex/discourse-goback-domains.git",
+    "https://github.com/CashbackForex/discourse-goBack-RKFX.git"
   ],
   "modifiers": {
     "serialize_topic_excerpts": true

@@ -549,3 +549,43 @@ html body #main-outlet {
 .topic-list .main-link.focused {
   box-shadow: none;
 }
+
+.d-header {
+  &.hide-menus {
+    .headerLink:not(.keep) {
+      display: none;
+    }
+  }
+}
+
+.custom-header-links {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  .headerLink {
+    list-style: none;
+    a {
+      font-weight: bold;
+      text-transform: lowercase;
+      color: #8091A3;
+      line-height: 34px;
+      font-size: 14px;
+    }
+  }
+}
+
+.desktop-view .vmo,
+.mobile-view .vdo {
+  display: none !important;
+}
+
+@if $links_position == left {
+  .custom-header-links {
+    margin-left: 1em;
+  }
+  .hide-menus {
+    .custom-header-links {
+      display: none;
+    }
+  }
+}
