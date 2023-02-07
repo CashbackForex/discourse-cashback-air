@@ -56,10 +56,16 @@ export default {
           const deviceClass = `.${device}`;
           const linkTarget = target === "self" ? "" : "_blank";
           const keepOnScrollClass = keepOnScroll === "keep" ? ".keep" : "";
-          const linkClass = `.${linkText
-            .toLowerCase()
-            .replace(/\s/gi, "-")}-custom-header-links`;
-
+          let linkClass = "";
+          if(linkText.contains("Login")){
+            window.alert("LoginA");
+            linkClass = "btn btn-primary btn-small login-button btn-icon-text custom-header-links";
+          } else {
+            linkClass = `.${linkText
+              .toLowerCase()
+              .replace(/\s/gi, "-")}-custom-header-links`;
+          }
+          
           const anchorAttributes = {
             title: linkTitle,
             href: linkHref,
@@ -67,13 +73,22 @@ export default {
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
           }
-
-          headerLinks.push(
-            h(
-              `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
-              h("a", anchorAttributes, linkText)
-            )
-          );
+          if(linkText.contains("Login")){
+            window.alert("LoginB");
+            headerLinks.push(
+              h(
+                `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
+                h("button", anchorAttributes, linkText)
+              )
+            );
+          } else {
+            headerLinks.push(
+              h(
+                `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
+                h("a", anchorAttributes, linkText)
+              )
+            );
+          }
         });
 
       api.decorateWidget(linksPosition, (helper) => {
