@@ -60,7 +60,7 @@ export default {
           let linkClass = "";
           if(linkText.indexOf("Login") > 0){
             window.alert("LoginA");
-            linkClass = "btn btn-primary btn-small login-button btn-icon-text custom-header-links";
+            linkClass = ".btn .btn-primary .btn-small .login-button .btn-icon-text .custom-header-links";
           } else {
             window.alert("LoginAA");
             linkClass = `.${linkText
