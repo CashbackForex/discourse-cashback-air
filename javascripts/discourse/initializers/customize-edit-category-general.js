@@ -59,8 +59,7 @@ export default {
           const keepOnScrollClass = keepOnScroll === "keep" ? ".keep" : "";
           let linkClass = "";
           if(linkText.indexOf("Login") > 0){
-            window.alert("LoginA");
-            linkClass = ".btn .btn-primary .btn-small .login-button .btn-icon-text .custom-header-links";
+            window.alert("LoginA");            
           } else {
             window.alert("LoginAA");
             linkClass = `.${linkText
@@ -79,7 +78,7 @@ export default {
             window.alert("LoginB");
             headerLinks.push(
               h(
-                `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
+                `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
                 h("button", anchorAttributes, linkText)
               )
             );
@@ -88,7 +87,7 @@ export default {
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
-                h("a", anchorAttributes, linkText)
+                h("span", anchorAttributes, linkText)
               )
             );
           }
