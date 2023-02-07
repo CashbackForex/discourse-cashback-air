@@ -58,10 +58,7 @@ export default {
           const linkTarget = target === "self" ? "" : "_blank";
           const keepOnScrollClass = keepOnScroll === "keep" ? ".keep" : "";
           let linkClass = "";
-          if(linkText.indexOf("Login") > 0){
-            window.alert("LoginA");            
-          } else {
-            window.alert("LoginAA");
+          if(linkText.indexOf("Login") < 0){
             linkClass = `.${linkText
               .toLowerCase()
               .replace(/\s/gi, "-")}-custom-header-links`;
@@ -74,8 +71,7 @@ export default {
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
           }
-          if(linkText.indexOf("Login") > 0){
-            window.alert("LoginB");
+          if(linkText.indexOf("Login") > 0){            
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
@@ -83,7 +79,6 @@ export default {
               )
             );
           } else {
-            window.alert("LoginBB");
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
