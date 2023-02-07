@@ -79,7 +79,7 @@ export default {
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
-                h("button", anchorAttributes, linkText)
+                h("span", anchorAttributes, linkText)
               )
             );
           } else {
@@ -87,7 +87,7 @@ export default {
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
-                h("span", anchorAttributes, linkText)
+                h("a", anchorAttributes, linkText)
               )
             );
           }
