@@ -47,13 +47,11 @@ export default {
         .split("|")
         .filter(Boolean)
         .map((goBackDomainLinksArray) => {
-          window.alert(goBackDomainLinksArray);
           const [linkText, linkTitle, linkHref, device, target, keepOnScroll] =
             goBackDomainLinksArray
               .split(",")
               .filter(Boolean)
               .map((x) => x.trim());
-          window.alert(linkText)
           const deviceClass = `.${device}`;
           const linkTarget = target === "self" ? "" : "_blank";
           const keepOnScrollClass = keepOnScroll === "keep" ? ".keep" : "";
