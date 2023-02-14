@@ -64,17 +64,16 @@ export default {
           
           const anchorAttributes = {
             title: linkTitle,
-            href: linkHref            
+            href: linkHref,
           };
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
           }
-          if(linkText.indexOf("Login") > 0){         
-            anchorAttributes.id="modalButton";
+          if(linkText.indexOf("Login") > 0){            
             headerLinks.push(
               h(
-                `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text.btn-open`,
-                h("button", anchorAttributes, linkText)
+                `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
+                h("span", anchorAttributes, linkText)
               )
             );
           } else {
