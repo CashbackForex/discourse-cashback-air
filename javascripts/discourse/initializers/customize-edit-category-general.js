@@ -125,8 +125,6 @@ export default {
         });
       }
       
-      Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/nazarii-cbf.cashbackforex\.com\/embed\/sound\/iframe\/.+/i);
-      Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/nazarii-nazarii.cashbackforex\.com\/embed\/sound\/iframe\/.+/i);
     });
   },
 };
