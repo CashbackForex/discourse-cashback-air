@@ -64,13 +64,13 @@ export default {
           
           const anchorAttributes = {
             title: linkTitle,
-            href: linkHref,
+            href: linkHref            
           };
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
           }
           if(linkText.indexOf("Login") > 0){         
-            anchorAttributes.data-bs-toggle = "modal";
+            anchorAttributes.id="modalButton";
             anchorAttributes.href = "#myModal";
             anchorAttributes.role = "button";
             headerLinks.push(
