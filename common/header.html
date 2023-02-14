@@ -13,9 +13,10 @@
     document.getElementById('backgroundContainer').className = className;    
     var myModal = document.getElementById('myModal');
     var myBtn = document.getElementById('modalButton');
-    myBtn.onclick(function() {
+    console.log("Button:", myBtn);
+    myBtn.onclick(function(){
       myModal.modal("show");
-    });  
+    });
 </script>
 
 <div class="background-container-main" id="backgroundContainer">
