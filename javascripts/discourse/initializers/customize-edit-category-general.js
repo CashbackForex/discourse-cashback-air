@@ -8,7 +8,9 @@ export default {
   name: "customize-edit-category-general",
 
   initialize() {
+
     withPluginApi("0.8.14", (api) => {
+      
       api.modifyClass("component:edit-category-general", {
         pluginId: "discourse-air",
 
@@ -122,6 +124,9 @@ export default {
           },
         });
       }
+      
+      Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/nazarii-cbf.cashbackforex\.com\/embed\/sound\/iframe\/.+/i);
+      Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/nazarii-nazarii.cashbackforex\.com\/embed\/sound\/iframe\/.+/i);
     });
   },
 };
