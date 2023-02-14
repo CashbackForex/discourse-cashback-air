@@ -71,12 +71,10 @@ export default {
           }
           if(linkText.indexOf("Login") > 0){         
             anchorAttributes.id="modalButton";
-            anchorAttributes.href = "#myModal";
-            anchorAttributes.role = "button";
             headerLinks.push(
               h(
-                `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
-                h("a", anchorAttributes, linkText)
+                `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text.btn-open`,
+                h("button", anchorAttributes, linkText)
               )
             );
           } else {
