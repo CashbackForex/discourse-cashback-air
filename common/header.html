@@ -13,13 +13,6 @@
     document.getElementById('backgroundContainer').className = className;    
     
     ////
-    const modal = document.querySelector(".modal");
-    const overlay = document.querySelector(".overlay");
-    const openModalBtn = document.getElementsByClassName("btn-open")
-    const closeModalBtn = document.querySelector(".btn-close");
-    openModalBtn.addEventListener("click", openModal);
-    closeModalBtn.addEventListener("click", closeModal);
-
     const closeModal = function () {
       modal.classList.add("hidden");
       overlay.classList.add("hidden");
@@ -30,6 +23,12 @@
       overlay.classList.remove("hidden");
     };
 
+    const modal = document.querySelector(".modal");
+    const overlay = document.querySelector(".overlay");
+    const openModalBtn = document.getElementsByClassName("btn-open")
+    const closeModalBtn = document.querySelector(".btn-close");
+    openModalBtn.addEventListener("click", openModal);
+    closeModalBtn.addEventListener("click", closeModal);
 
 </script>
 
