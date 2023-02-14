@@ -69,11 +69,14 @@ export default {
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
           }
-          if(linkText.indexOf("Login") > 0){            
+          if(linkText.indexOf("Login") > 0){         
+            anchorAttributes.data-bs-toggle = "modal";
+            anchorAttributes.href = "#myModal";
+            anchorAttributes.role = "button";
             headerLinks.push(
               h(
                 `li.headerLink${deviceClass}${keepOnScrollClass}.btn.btn-primary.login-button.btn-small.btn-icon-text`,
-                h("span", anchorAttributes, linkText)
+                h("a", anchorAttributes, linkText)
               )
             );
           } else {
