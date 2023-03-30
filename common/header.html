@@ -3,17 +3,13 @@
 
 <script>
     var org_path = window.location.hostname;
-    window.alert(org_path)
     var className = '';
 
     if(org_path.includes('cbf')){
-      window.alert("CBF")
       className = 'background-container-cbf';
     } else if(org_path.includes('rkfx')){
-      window.alert("RKFX")
       className = 'background-container-rkfx';
     } else {
-      window.alert("MAIN")
       className = 'background-container-main';    
     }
     document.getElementById('backgroundContainer').className = className;    
