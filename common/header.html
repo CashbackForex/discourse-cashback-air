@@ -1,13 +1,12 @@
 </body>
 </html>
 
-<script type="text/discourse-plugin" version="0.8.13">
-    var parentPortal = settings.parent_Portal_Key;
-    
+<script>
+    var org_path = window.location.hostname;
     var className = '';
-    if(parentPortal == 'CBF')
+    if(org_path.contains('cbf'))
       className = 'background-container-cbf';
-    else if(parentPortal == 'RKFX')
+    else if(org_path.contains('rkfx'))
       className = 'background-container-rkfx';
     else
       className = 'background-container-main';    
