@@ -1,15 +1,14 @@
 </body>
 </html>
 
-<script>
+<script type="text/discourse-plugin" version="0.8.13">
     var parentPortal = settings.parent_Portal_Key;
     window.alert(parentPortal);
 
-    var org_path = window.location.hostname;
     var className = '';
-    if(org_path == 'cbf.talktrading.io')
+    if(parentPortal == 'CBF')
       className = 'background-container-cbf';
-    else if(org_path == 'rkfx.talktrading.io')
+    else if(parentPortal == 'RKFX')
       className = 'background-container-rkfx';
     else
       className = 'background-container-main';    
