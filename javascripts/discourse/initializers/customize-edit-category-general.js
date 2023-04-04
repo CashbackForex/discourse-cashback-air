@@ -32,10 +32,9 @@ export default {
       
       let goBackDomainLinks = '';
       
-      if (domain.includes('cbf')) goBackDomainLinks = settings.goBack_cbf_links;
-      else if (domain.includes('rkfx')) goBackDomainLinks = settings.goBack_rkfx_links;
+      if (window.portal == 'CBF') goBackDomainLinks = settings.goBack_cbf_links;
+      else if (window.portal == 'RKFX') goBackDomainLinks = settings.goBack_rkfx_links;
       else return;
-      
       if (!goBackDomainLinks.length) {
         return;
       }
