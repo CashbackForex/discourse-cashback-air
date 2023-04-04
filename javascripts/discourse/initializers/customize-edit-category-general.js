@@ -8,7 +8,7 @@ export default {
   name: "customize-edit-category-general",
 
   initialize() {
-
+    
     withPluginApi("0.8.14", (api) => {
       
       api.modifyClass("component:edit-category-general", {
@@ -27,12 +27,13 @@ export default {
         },
       });
 
+
       const domain = window.location.hostname;
-      window.alert(domain);
+      
       let goBackDomainLinks = '';
-      if(domain == 'talktrading.io') return;
-      else if (domain == 'cbf.talktrading.io') goBackDomainLinks = settings.goBack_cbf_links;
-      else if (domain == 'rkfx.talktrading.io') goBackDomainLinks = settings.goBack_rkfx_links;
+      
+      if (window.portal == 'CBF') goBackDomainLinks = settings.goBack_cbf_links;
+      else if (window.portal == 'RKFX') goBackDomainLinks = settings.goBack_rkfx_links;
       
       if (!goBackDomainLinks.length) {
         return;
