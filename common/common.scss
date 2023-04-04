@@ -215,6 +215,34 @@ div.ac-wrap {
   border-left-color: var(--tertiary);
 }
 
+.background-container-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg,var(--tertiary-hover) 0%,var(--tertiary) 100%);
+  clip-path: ellipse(148% 70% at 91% -14%);
+}
+.background-container-cbf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%);
+  clip-path: ellipse(148% 70% at 91% -14%);
+}
+.background-container-rkfx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right,#ec3f2a 35%,#fc7019 55%);
+  clip-path: ellipse(148% 70% at 91% -14%);
+}
+
 // graceful ish style
 @mixin box-shadow($value: 0px) {
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.07),
@@ -232,33 +260,7 @@ html {
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
-  .background-container-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(90deg,var(--tertiary-hover) 0%,var(--tertiary) 100%);
-    clip-path: ellipse(148% 70% at 91% -14%);
-  }
-  .background-container-cbf {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%);
-    clip-path: ellipse(148% 70% at 91% -14%);
-  }
-  .background-container-rkfx {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(to right,#ec3f2a 35%,#fc7019 55%);
-    clip-path: ellipse(148% 70% at 91% -14%);
-  }
+  
 }
 
 html body #main-outlet {
