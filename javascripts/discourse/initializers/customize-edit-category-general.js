@@ -31,7 +31,7 @@ export default {
       
       if (window.portal == 'CBF') goBackDomainLinks = settings.goBack_cbf_links;
       else if (window.portal == 'RKFX') goBackDomainLinks = settings.goBack_rkfx_links;
-      
+      else return;
       if (!goBackDomainLinks.length) {
         return;
       }
