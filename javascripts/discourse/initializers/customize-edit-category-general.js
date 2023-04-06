@@ -31,7 +31,7 @@ export default {
       const domain = window.location.hostname;
       
       let goBackDomainLinks = '';
-      
+      window.alert(window.portal);
       if (window.portal == 'CBF') goBackDomainLinks = settings.goBack_cbf_links;
       else if (window.portal == 'RKFX') goBackDomainLinks = settings.goBack_rkfx_links;
       else return;
