@@ -1,9 +1,13 @@
 <script>
   const domain = window.location.hostname;
+  window.alert(domain);
   const backgroundContainer = document.getElementById("backgroundContainer");
+  window.alert(backgroundContainer);
   if(domain.includes("cbf")){
+    window.alert("CBF");
     backgroundContainer.className = "background-container-cbf";
   } else if(domain.includes("rkfx")){
+    window.alert("RKFX");
     backgroundContainer.className = "background-container-rkfx";
   } else {
     backgroundContainer.className = "background-container-main";
